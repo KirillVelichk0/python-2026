@@ -10,7 +10,7 @@ def gelu_chunk(chunk):
 
 if __name__ == "__main__":
     N = mp.cpu_count()
-    total_points = 1000000 * N
+    total_points = 10000 * N
     data = np.random.randn(total_points).astype(np.float32)
 
     # Последовательный расчёт (1 ядро)
